@@ -6,7 +6,8 @@ class Chat extends Component {
   state = {
     messages: [],
     messageInput: '',
-    date: []
+    date: [],
+    key: []
   };
   handleOnChange = event => {
     this.setState({ messageInput: event.target.value });
@@ -14,12 +15,17 @@ class Chat extends Component {
 
   sendMessageOnEnter = event => {
     let date = new Date();
+    let index = Math.random();
 
     if (event.key === 'Enter' && this.state.messageInput !== '') {
       this.setState({
         messages: [
           ...this.state.messages,
-          { text: this.state.messageInput, date: date.toLocaleTimeString() }
+          {
+            text: this.state.messageInput,
+            date: date.toLocaleTimeString(),
+            key: index
+          }
         ]
       });
       this.setState({ messageInput: '' });
@@ -40,11 +46,7 @@ class Chat extends Component {
         <div className="message-list">
           <div className="messages">
             {this.state.messages.map((message, index) => (
-              <Message
-                key={Math.random()}
-                text={message.text}
-                date={message.date}
-              />
+              <Message key={index} text={message.text} date={message.date} />
             ))}
           </div>
         </div>
