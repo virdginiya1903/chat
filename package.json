@@ -2,6 +2,7 @@
   "name": "chat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://virdginiya1903.github.io/chat/",
   "dependencies": {
     "moment": "^2.22.2",
     "prettier": "^1.13.5",
