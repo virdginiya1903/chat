@@ -23,15 +23,8 @@ class Chat extends Component {
         ]
       });
       this.setState({ messageInput: '' });
-      // this.setState({
-      //   date2: new Date()
-      // });
-      // this.setState({ date: [...this.state.date, {}] });
     }
   };
-  // componentDidUpdate() {
-  //   this.scrollToBottom();
-  // }
 
   render() {
     return (
@@ -51,7 +44,6 @@ class Chat extends Component {
                 key={Math.random()}
                 text={message.text}
                 date={message.date}
-                // date={this.state.date2}
               />
             ))}
           </div>
