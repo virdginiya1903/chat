@@ -1,12 +1,14 @@
 .message {
   margin: 5px 0;
   align-self: left;
-  background-color: #5b5bff;
+  background: var(--main-color);
   border-radius: 16px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px 15px;
   align-self: baseline;
+  max-width: 225px;
+  word-wrap: break-word;
 }
 
 .message__like {
@@ -14,4 +16,9 @@
   height: 16px;
   padding-left: 10px;
   cursor: pointer;
+}
+.date {
+  color: var(--secondary-text-color);
+  font-size: 12px;
+  text-align: right;
 }

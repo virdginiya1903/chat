@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "moment": "^2.22.2",
     "prettier": "^1.13.5",
     "react": "16.4.1",
     "react-dom": "16.4.1",
+    "react-moment": "^0.7.9",
     "react-scripts": "1.1.4"
   },
   "scripts": {
@@ -13,9 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "check-prettier": "prettier --config ./.prettierrc --list-different src/**/*.js",
-    "eject": "react-scripts eject",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "cypress": "^3.0.1",
