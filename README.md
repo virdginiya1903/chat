@@ -3,7 +3,7 @@
 
 ![видео работы приложения](https://j.gifs.com/vo471M.gif)
 ---
-## Перейти на проект можно по ссылке: https://virdginiya1903.github.io/chat/
+Перейти на проект можно по [ссылке](https://virdginiya1903.github.io/chat/).
 
 ## Что использовала в проекте: 
 + create-react-app
