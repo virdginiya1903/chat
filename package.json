@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://virdginiya1903.github.io/chat/",
   "dependencies": {
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "prettier": "^1.13.5",
     "react": "16.4.1",
     "react-dom": "16.4.1",
